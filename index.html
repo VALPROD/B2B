@@ -11,7 +11,7 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
-      background-color: #0c0a09;
+      background-color: #0c0a09; /* S'adapte à la couleur de votre thème */
     }
     .iframe-container {
       width: 100%;
@@ -21,9 +21,10 @@
     }
     iframe {
       width: 100%;
-      height: calc(100% + 38px);
+      /* Ajusté à 26px pour masquer le bandeau Google sans rogner le haut du site */
+      height: calc(100% + 26px);
       position: absolute;
-      top: -38px;
+      top: -26px;
       left: 0;
       border: none;
     }
@@ -32,8 +33,8 @@
 <body>
 
   <div class="iframe-container">
-    <!-- REMplacez l'adresse ci-dessous par VOTRE lien de script Google Apps Script -->
-    <iframe src="https://script.google.com/macros/s/AKfycbw8g68tbNHvkTGSFL2LWsiWwm9T261rsRB2moL9ss_ZcmsPYROMkPPp7DLTjzotFHM8/exec"></iframe>
+    <!-- Remplacez l'adresse ci-dessous par VOTRE lien de script Google Apps Script (/exec) -->
+    <iframe src="https://script.google.com/macros/s/VOTRE_ID_EXECUTION/exec"></iframe>
   </div>
 
 </body>
