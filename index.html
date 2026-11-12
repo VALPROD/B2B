@@ -5,28 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VALPROD B2B | Espace Professionnel</title>
   <style>
+    /* Utilisation de min-height et dvh pour s'adapter aux barres mobiles */
     html, body {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
-      overflow: hidden;
-      background-color: #0c0a09; /* S'adapte à la couleur de votre thème */
+      background-color: #0c0a09;
     }
     .iframe-container {
       width: 100%;
-      height: 100vh;
-      overflow: hidden;
+      height: 100%;
+      height: 100dvh; /* S'adapte dynamiquement à la hauteur réelle sur mobile */
       position: relative;
     }
     iframe {
       width: 100%;
-      /* Ajusté à 10px pour masquer le bandeau Google sans rogner le haut du site */
-      height: calc(100% + 0px);
-      position: absolute;
-      top: 0px;
-      left: 0;
+      height: 100%;
       border: none;
+      display: block;
     }
   </style>
 </head>
